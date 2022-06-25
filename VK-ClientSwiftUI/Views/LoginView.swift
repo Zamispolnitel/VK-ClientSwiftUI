@@ -8,11 +8,23 @@
 import SwiftUI
 import Combine
 
-struct ContentView: View {
+struct LoginView: View {
+    
 
     @State private var login = ""
     @State private var password = ""
     @State private var shouldShowLogo = true
+    @State private var checkPass = false
+    @Binding var isUserLoggedIn: Bool
+    
+    private func checkLogPass() {
+            if login == "1" && password == "2" {
+                isUserLoggedIn = true
+        } else {
+            checkPass = true
+        }
+            password = ""
+    }
     
     private let keyboardPublisher = Publishers.Merge(
         NotificationCenter.default.publisher(for:           UIResponder.keyboardWillShowNotification)
@@ -30,6 +42,10 @@ struct ContentView: View {
                     .aspectRatio(contentMode: .fill)
                     .frame(maxWidth: geometry.size.width,
                            maxHeight: geometry.size.height)
+            }.onTapGesture {
+                UIApplication.shared.endEditing()
+            }.alert(isPresented: $checkPass) {
+                Alert(title: Text("Error"), message: Text("Invalid Login or Password"))
             }
             
     ScrollView {
@@ -68,7 +84,7 @@ struct ContentView: View {
 
 
             Button {
-                print("Button pressed")
+                checkLogPass()
             } label: {
                 Label("Log in", systemImage: "chevron.right.circle")
             }
@@ -100,10 +116,4 @@ extension UIApplication {
         self.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
 }
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
-
 

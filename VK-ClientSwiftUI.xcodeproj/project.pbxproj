@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		871C555A2863B779005C6702 /* CircleShadows.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871C55592863B779005C6702 /* CircleShadows.swift */; };
+		871C555C2863B997005C6702 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871C555B2863B997005C6702 /* ListView.swift */; };
+		871C555E2863CC22005C6702 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871C555D2863CC22005C6702 /* GroupCell.swift */; };
 		875C7AE3285EC0A1009E84BB /* VK_ClientSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875C7AE2285EC0A1009E84BB /* VK_ClientSwiftUIApp.swift */; };
-		875C7AE5285EC0A1009E84BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875C7AE4285EC0A1009E84BB /* ContentView.swift */; };
+		875C7AE5285EC0A1009E84BB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875C7AE4285EC0A1009E84BB /* LoginView.swift */; };
 		875C7AE7285EC0A2009E84BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 875C7AE6285EC0A2009E84BB /* Assets.xcassets */; };
 		875C7AEA285EC0A2009E84BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 875C7AE9285EC0A2009E84BB /* Preview Assets.xcassets */; };
+		87C7E1C228665373003DB899 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C7E1C128665373003DB899 /* ContainerView.swift */; };
+		87C7E1C4286798DD003DB899 /* FriendsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C7E1C3286798DD003DB899 /* FriendsModel.swift */; };
+		87C7E1C62867AB5E003DB899 /* FriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C7E1C52867AB5E003DB899 /* FriendsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		871C55592863B779005C6702 /* CircleShadows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleShadows.swift; sourceTree = "<group>"; };
+		871C555B2863B997005C6702 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		871C555D2863CC22005C6702 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
 		875C7ADF285EC0A1009E84BB /* VK-ClientSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VK-ClientSwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		875C7AE2285EC0A1009E84BB /* VK_ClientSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VK_ClientSwiftUIApp.swift; sourceTree = "<group>"; };
-		875C7AE4285EC0A1009E84BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		875C7AE4285EC0A1009E84BB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		875C7AE6285EC0A2009E84BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		875C7AE9285EC0A2009E84BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		87C7E1C128665373003DB899 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		87C7E1C3286798DD003DB899 /* FriendsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsModel.swift; sourceTree = "<group>"; };
+		87C7E1C52867AB5E003DB899 /* FriendsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +44,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		871C55572863B645005C6702 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				875C7AE4285EC0A1009E84BB /* LoginView.swift */,
+				871C555B2863B997005C6702 /* ListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		871C55582863B723005C6702 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				871C55592863B779005C6702 /* CircleShadows.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		871C555F2863CCDB005C6702 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				87C7E1C3286798DD003DB899 /* FriendsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		875C7AD6285EC0A1009E84BB = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +88,14 @@
 		875C7AE1285EC0A1009E84BB /* VK-ClientSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				87C7E1C72867AD60003DB899 /* Cells */,
+				871C555F2863CCDB005C6702 /* Models */,
+				871C55582863B723005C6702 /* ViewModifiers */,
 				875C7AE2285EC0A1009E84BB /* VK_ClientSwiftUIApp.swift */,
-				875C7AE4285EC0A1009E84BB /* ContentView.swift */,
+				871C55572863B645005C6702 /* Views */,
 				875C7AE6285EC0A2009E84BB /* Assets.xcassets */,
 				875C7AE8285EC0A2009E84BB /* Preview Content */,
+				87C7E1C128665373003DB899 /* ContainerView.swift */,
 			);
 			path = "VK-ClientSwiftUI";
 			sourceTree = "<group>";
@@ -65,6 +106,15 @@
 				875C7AE9285EC0A2009E84BB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		87C7E1C72867AD60003DB899 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				87C7E1C52867AB5E003DB899 /* FriendsCell.swift */,
+				871C555D2863CC22005C6702 /* GroupCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +187,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				875C7AE5285EC0A1009E84BB /* ContentView.swift in Sources */,
+				871C555E2863CC22005C6702 /* GroupCell.swift in Sources */,
+				875C7AE5285EC0A1009E84BB /* LoginView.swift in Sources */,
+				87C7E1C228665373003DB899 /* ContainerView.swift in Sources */,
+				871C555A2863B779005C6702 /* CircleShadows.swift in Sources */,
+				87C7E1C4286798DD003DB899 /* FriendsModel.swift in Sources */,
 				875C7AE3285EC0A1009E84BB /* VK_ClientSwiftUIApp.swift in Sources */,
+				871C555C2863B997005C6702 /* ListView.swift in Sources */,
+				87C7E1C62867AB5E003DB899 /* FriendsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
